@@ -7,11 +7,26 @@ return {
       ---@type lspconfig.options
       servers = {
         omnisharp = {
-          cmd = { "dotnet", "C:/Users/max.GA/AppData/Local/nvim-data/mason/packages/omnisharp/OmniSharp.dll" }
+          cmd = { "dotnet", "C:/Users/max.GA/AppData/Local/nvim-data/mason/packages/omnisharp/OmniSharp.dll" },
         },
         rust_analyzer = {},
-      }
-    }
+        eslint = {
+          on_attach = function(client, bufnr)
+            client.server_capabilities.documentFormattingProvider = true
+            if client.server_capabilities.documentFormattingProvider then
+              local au_lsp = vim.api.nvim_create_augroup("eslint_lsp", { clear = true })
+              vim.api.nvim_create_autocmd("BufWritePre", {
+                buffer = bufnr,
+                callback = function()
+                  vim.lsp.buf.format({ async = true, bufnr = bufnr })
+                end,
+                group = au_lsp,
+              })
+            end
+          end,
+        },
+      },
+    },
   },
 
   {
@@ -100,7 +115,6 @@ return {
         executable = {
           command = "C:/Users/max.GA/AppData/Local/nvim-data/mason/packages/codelldb/extension/adapter/codelldb",
           args = { "--port", "${port}" },
-
           -- On windows you may have to uncomment this:
           detached = false,
         },
@@ -197,8 +211,8 @@ return {
           },
         },
         floating = {
-          max_height = nil, -- These can be integers or a float between 0 and 1.
-          max_width = nil, -- Floats will be treated as percentage of your screen.
+          max_height = nil,  -- These can be integers or a float between 0 and 1.
+          max_width = nil,   -- Floats will be treated as percentage of your screen.
           border = "single", -- Border style. Can be "single", "double" or "rounded"
           mappings = {
             close = { "q", "<Esc>" },
