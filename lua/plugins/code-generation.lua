@@ -1,0 +1,3 @@
+return {
+   { "groovyghoul/sqeletor.nvim"  }
+}
