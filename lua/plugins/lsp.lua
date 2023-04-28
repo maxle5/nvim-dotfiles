@@ -10,6 +10,7 @@ return {
           cmd = { "dotnet", "C:/Users/max.GA/AppData/Local/nvim-data/mason/packages/omnisharp/OmniSharp.dll" },
         },
         rust_analyzer = {},
+        volar = {},
       },
     },
   },
