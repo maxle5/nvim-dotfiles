@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\share\\lua\\5.1\\?.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\max.GA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FTerm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\FTerm.nvim",
+    url = "https://github.com/numToStr/FTerm.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -105,6 +110,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["conform.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fconform\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -135,6 +146,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -171,6 +187,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["roslyn.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\roslyn.nvim",
+    url = "https://github.com/jmederosalvarado/roslyn.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -189,14 +210,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\na\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: conform.nvim
+time([[Config for conform.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fconform\frequire\0", "config", "conform.nvim")
+time([[Config for conform.nvim]], false)
+-- Config for: gruvbox
+time([[Config for gruvbox]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
+time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
