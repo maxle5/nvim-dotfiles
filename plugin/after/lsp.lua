@@ -70,6 +70,11 @@ require("lspconfig").volar.setup({
 	capabilities = capabilities,
 })
 
+require("lspconfig").rust_analyzer.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 require("lspconfig").tsserver.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,

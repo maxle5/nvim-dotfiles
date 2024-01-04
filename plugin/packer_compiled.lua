@@ -116,6 +116,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\conform.nvim",
     url = "https://github.com/stevearc/conform.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -157,6 +162,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
@@ -166,6 +176,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "C:\\Users\\max.GA\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -210,14 +225,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\na\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
 -- Config for: conform.nvim
 time([[Config for conform.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fconform\frequire\0", "config", "conform.nvim")
 time([[Config for conform.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\na\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 -- Config for: gruvbox
 time([[Config for gruvbox]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
