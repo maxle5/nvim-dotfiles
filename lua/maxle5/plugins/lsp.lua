@@ -65,7 +65,7 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ["<Up>"] = cmp.mapping.select_prev_item(cmp_select),
                 ["<Down>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<Enter>"] = cmp.mapping.confirm({ select = true }),
+                ["<Enter>"] = cmp.mapping.confirm({ select = false }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({

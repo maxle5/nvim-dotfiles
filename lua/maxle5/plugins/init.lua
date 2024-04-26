@@ -20,6 +20,7 @@ return {
                 dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
                 dashboard.button("f", "  > Find file", ":cd E:/ | Telescope find_files<CR>"),
                 dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
+                dashboard.button("l", "💤 > Lazy", ":Lazy<CR>"),
                 dashboard.button("q", "󰩈  > Exit", ":q<CR>"),
             }
 
@@ -54,7 +55,7 @@ return {
                 invert_tabline = false,
                 invert_intend_guides = false,
                 inverse = true, -- invert background for search, diffs, statuslines and errors
-                contrast = "", -- can be "hard", "soft" or empty string
+                contrast = "",  -- can be "hard", "soft" or empty string
                 palette_overrides = {},
                 overrides = {},
                 dim_inactive = false,
@@ -65,6 +66,5 @@ return {
     },
 
     { "mbbill/undotree" },
-
     { "github/copilot.vim" },
 }
